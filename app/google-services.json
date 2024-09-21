@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "772151638243",
+    "project_id": "ertekler-3f6c1",
+    "storage_bucket": "ertekler-3f6c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772151638243:android:fa34f9e7ecf7ebd553add6",
+        "android_client_info": {
+          "package_name": "com.example.erteklerqosqlarhmtaqmaqlar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh4VxiqjSt5A6VTs1dECVRoPiSFrh8YtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

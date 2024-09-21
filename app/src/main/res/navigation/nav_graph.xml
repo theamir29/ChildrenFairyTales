@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ertekFragment">
+
+    <fragment
+        android:id="@+id/ertekFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.ErtekFragment"
+        android:label="ErtekFragment"
+        tools:layout="@layout/fragment_ertek">
+        <action
+            android:id="@+id/action_ertekFragment_to_favoritesErtekFragment"
+            app:destination="@id/favoritesErtekFragment" />
+        <action
+            android:id="@+id/action_ertekFragment_to_innerErtekFragment"
+            app:destination="@id/innerErtekFragment" />
+        <action
+            android:id="@+id/action_ertekFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_ertekFragment_to_messageNewsFragment"
+            app:destination="@id/messageNewsFragment" />
+        <action
+            android:id="@+id/action_ertekFragment_to_matchingFragment"
+            app:destination="@id/matchingFragment" />
+        <action
+            android:id="@+id/action_ertekFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qosiqFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.qosiq.QosiqFragment"
+        android:label="QosiqFragment"
+        tools:layout="@layout/fragment_qosiq">
+        <action
+            android:id="@+id/action_qosiqFragment_to_favoritesQosiqFragment"
+            app:destination="@id/favoritesQosiqFragment" />
+        <action
+            android:id="@+id/action_qosiqFragment_to_qosiqInnerFragment"
+            app:destination="@id/qosiqInnerFragment" />
+        <action
+            android:id="@+id/action_qosiqFragment_to_messageNewsFragment"
+            app:destination="@id/messageNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taqmaqFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.taqmaq.TaqmaqFragment"
+        android:label="TaqmaqFragment"
+        tools:layout="@layout/fragment_taqmaq">
+        <action
+            android:id="@+id/action_taqmaqFragment_to_favoritesTaqmaqFragment"
+            app:destination="@id/favoritesTaqmaqFragment" />
+        <action
+            android:id="@+id/action_taqmaqFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_taqmaqFragment_to_messageNewsFragment"
+            app:destination="@id/messageNewsFragment" />
+        <action
+            android:id="@+id/action_taqmaqFragment_to_taqmaqInnerFragment"
+            app:destination="@id/taqmaqInnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.PlayerFragment"
+        android:label="PlayerFragment"
+        tools:layout="@layout/fragment_player">
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesQosiqFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.qosiq.FavoritesQosiqFragment"
+        android:label="fragment_qosiq_favorites"
+        tools:layout="@layout/fragment_qosiq_favorites" />
+    <fragment
+        android:id="@+id/favoritesTaqmaqFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.taqmaq.FavoritesTaqmaqFragment"
+        android:label="FavoritesTaqmaqFragment"
+        tools:layout="@layout/fragment_taqmaq_favorites" />
+    <fragment
+        android:id="@+id/favoritesErtekFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.FavoritesErtekFragment"
+        android:label="FavoritesErtekFragment"
+        tools:layout="@layout/fragment_ertek_favorites" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.test.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test">
+        <action
+            android:id="@+id/action_testFragment_to_matchingFragment"
+            app:destination="@id/matchingFragment"
+            app:popUpTo="@id/testFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/innerErtekFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.InnerErtekFragment"
+        android:label="InnerErtekFragment"
+        tools:layout="@layout/fragment_inner_ertek">
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_innerErtekFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_innerErtekFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_innerErtekFragment_to_ertekTextFragment"
+            app:destination="@id/ertekTextFragment" />
+        <action
+            android:id="@+id/action_innerErtekFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.question.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/qosiqInnerFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.qosiq.QosiqInnerFragment"
+        android:label="fragment_inner_qosiq"
+        tools:layout="@layout/fragment_inner_qosiq">
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_qosiqInnerFragment_to_testQosiqFragment2"
+            app:destination="@id/testQosiqFragment2" />
+    <!--    <action
+            android:id="@+id/action_qosiqInnerFragment_to_testFragment"
+            app:destination="@id/testFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/messageNewsFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.MessageNewsFragment"
+        android:label="MessageNewsFragment"
+        tools:layout="@layout/fragment_news_message" />
+    <fragment
+        android:id="@+id/taqmaqInnerFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.taqmaq.TaqmaqInnerFragment"
+        android:label="fragment_inner_taqmaq"
+        tools:layout="@layout/fragment_inner_taqmaq" />
+    <fragment
+        android:id="@+id/ertekTextFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.ErtekTextFragment"
+        android:label="ErtekTextFragment"
+        tools:layout="@layout/fragment_ertek_text">
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchingFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.matching.MatchingFragment"
+        android:label="fragment_matching"
+        tools:layout="@layout/fragment_matching">
+        <action
+            android:id="@+id/action_matchingFragment_to_questionFragment"
+            app:destination="@id/questionFragment"
+            app:popUpTo="@id/matchingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.ertek.VideoFragment"
+        android:label="VideoFragment"
+        tools:layout="@layout/fragment_video">
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/testQosiqFragment2"
+        android:name="com.example.erteklerqosqlarhmtaqmaqlar.view.testQosiqlar.TestQosiqFragment2"
+        android:label="fragment_test_qosiq2"
+        tools:layout="@layout/fragment_qosiq_test" />
+</navigation>
